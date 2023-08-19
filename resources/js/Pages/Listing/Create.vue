@@ -3,17 +3,17 @@
       <div>
         <div>
           <label>Beds</label>
-          <input v-model.number="form.beds" type="text" />
+          <input v-model.number="form.beds" type="number" />
         </div>
   
         <div>
           <label>Baths</label>
-          <input v-model.number="form.baths" type="text" />
+          <input v-model.number="form.baths" type="number" />
         </div>
   
         <div>
           <label>Area</label>
-          <input v-model.number="form.area" type="text" />
+          <input v-model.number="form.area" type="number" />
         </div>
   
         <div>
@@ -33,12 +33,12 @@
   
         <div>
           <label>Street Nr</label>
-          <input v-model.number="form.street_nr" type="text" />
+          <input v-model.number="form.street_nr" type="number" />
         </div>
   
         <div>
           <label>Price</label>
-          <input v-model.number="form.price" type="text" />
+          <input v-model.number="form.price" type="number" />
         </div>
   
         <div>
