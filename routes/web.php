@@ -19,4 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/show',[IndexController::class, 'show']);
 
-Route::resource('listing', ListingController::class)->only(['index', 'show', 'create', 'store']);
+Route::middleware('web')->group(function () {
+    // Your API routes here...
+    Route::resource('listing', ListingController::class);
+});
